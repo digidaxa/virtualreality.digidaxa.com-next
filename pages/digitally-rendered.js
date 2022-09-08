@@ -1,5 +1,5 @@
 export default function DigitallyRendered() {
-  return(
+  return (
     <h1>Digitally Rendered</h1>
   );
 }

@@ -1,5 +1,5 @@
 export default function Photographed() {
-  return(
+  return (
     <h1>Photographed</h1>
   );
 }

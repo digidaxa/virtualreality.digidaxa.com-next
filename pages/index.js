@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,12 +11,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className='text-5xl'>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="text-5xl">
+          Welcome to
+          {' '}
+          <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p>
-          Get started by editing{' '}
+          Get started by editing
+          {' '}
           <code>pages/index.js</code>
         </p>
 
@@ -33,7 +36,7 @@ export default function Home() {
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
-          
+
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
@@ -41,7 +44,7 @@ export default function Home() {
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          
+
           >
             <h2>Deploy &rarr;</h2>
             <p>
@@ -57,12 +60,13 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by
+          {' '}
           <span>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
