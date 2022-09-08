@@ -1,0 +1,57 @@
+{
+  "skipButtonText": "Go to content",
+  "header": {
+    "home": "Home",
+    "virtualReality": "Virtual Reality",
+    "photographed": "Photographed",
+    "digitally": "Digitally Rendered",
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "contactUs": "Contact Us"
+  },
+  "page": {
+    "home": {
+      "hero": {
+        "title": "Make Good Visualization Your Bussiness with Virtual Reality",
+        "subtitle": "Solutions to build your business virtual ecosystem, simplify the sales process, and impress customers with virtual reality.",
+        "cta": "Get it Now"
+      },
+      "clients": {
+        "title": "Been working with",
+        "subtitle": "We have also worked with several companies."
+      },
+      "features": {
+        "title": "Why Use Virtual Reality for Marketing?"
+      },
+      "benefit": {
+        "title": "Digidaxa is Ready to Make Your Store Visualization More Elegant"
+      }
+    },
+    "photographed": {
+      "hero": {
+        "title": "360 Photographed",
+        "subtitle": "Bring Real Virtual Tour Experience with Immersive Technology"
+      },
+      "reinforcement": {
+        "title": "The Future with 360 Photographed",
+        "subtitle": "Today virtual reality 360 affects less than a million jobs. Of course, this number will increase."
+      },
+      "featured": {
+        "title": "Change Your Strategy Now!",
+        "subtitle": "Promote your business in a more modern way. 360 Photographed is an immersive technology to promote your business realistically with more extensive. Make a virtual tour of your business, like visiting it in person."
+      }
+    },
+    "digitallyRendered": {
+      "hero": {
+        "title": "360 Digitally Rendered",
+        "subtitle": "Shop More Interactively In Virtual Retail Stores"
+      },
+      "comparison": {
+        "title": "Comparison of Digital Stores and Physical Stores"
+      }
+    }
+  },
+  "footer": {
+    "address": "Dongos Highway, Dongos Village Neighbourhood. 02/Hamlet. 04,\nKedung Sub-district, Jepara Regency,\nCentral Java 59463." 
+  }
+}
