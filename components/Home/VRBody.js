@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-
+import Image from 'next/image';
 import { AppContext } from '../../context/app-context';
 
 export default function VRBody() {
@@ -19,7 +19,7 @@ export default function VRBody() {
                 {
                   vr.images
                     .map((image) => (
-                      <img
+                      <Image
                         key={image.id}
                         src={image.src}
                         alt={image.alt}

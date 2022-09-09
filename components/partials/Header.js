@@ -2,6 +2,7 @@ import React from 'react';
 import autoBindReact from 'auto-bind/react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import HamburgerButton from './HamburgerButton';
 import Navbar from './Navbar';
 import DarkModeToggle from './DarkModeToggle';
@@ -101,7 +102,7 @@ export default class Header extends React.Component {
             <div className="px-4 flex items-center">
               <Link href="/" className="inline-block cursor-pointer py-6 text-lg font-bold text-primary">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src="/img/logo.webp"
                     alt="Logo Digidaxa"
                     className="mr-2 h-8"
