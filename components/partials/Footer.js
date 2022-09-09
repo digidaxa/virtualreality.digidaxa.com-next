@@ -1,9 +1,7 @@
-import React from 'react';
-
 import FooterAddress from './FooterAddress';
 import SocialMediaIcon from './SocialMediaIcon';
 import FooterCompany from './FooterCompany';
-import { FooterCopyright } from './FooterCopyright';
+import FooterCopyright from './FooterCopyright';
 import FooterServices from './FooterServices';
 
 import {
