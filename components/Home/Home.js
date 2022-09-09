@@ -1,11 +1,11 @@
+import { useEffect } from 'react';
 import Hero from './Hero';
 import Client from './Client';
 import Portfolio from './Portfolio';
 import Feature from './Feature';
 import VR from './VR';
 import Benefit from './Benefit';
-import CTA from '../../partials/CTA';
-import { useEffect } from 'react';
+import CTA from '../partials/CTA';
 
 import {
   clientsData,
@@ -14,8 +14,8 @@ import {
   virtualRealityData,
   benefitsData,
   benefitButtonsData,
-  ctaData
-} from '../../../utils/data/id/HomeData';
+  ctaData,
+} from '../../pages/api/data/id/HomeData';
 
 import {
   clientsDataEn,
@@ -24,17 +24,23 @@ import {
   virtualRealityDataEn,
   benefitsDataEn,
   benefitButtonsDataEn,
-  ctaDataEn
-} from '../../../utils/data/en/HomeData';
+  ctaDataEn,
+} from '../../pages/api/data/en/HomeData';
 
-import { AppContext } from '../../../context/app-context';
+import { AppContext } from '../../context/app-context';
 
 export default function Home({ language }) {
-  useEffect(function () {
-    document.title = 'Virtual Reality Digidaxa - Make Good Visualization Your Bussiness with Virtual Reality'
+  useEffect(() => {
+    document.title = 'Virtual Reality Digidaxa - Make Good Visualization Your Bussiness with Virtual Reality';
   }, []);
 
-  let clients, portfolios, features, virtualReality, benefits, benefitButtons, cta;
+  let clients;
+  let portfolios;
+  let features;
+  let virtualReality;
+  let benefits;
+  let benefitButtons;
+  let cta;
   if (language === 'id') {
     clients = clientsData();
     portfolios = portfolioData();
@@ -54,13 +60,13 @@ export default function Home({ language }) {
   }
 
   const appContextValue = {
-    clients, 
-    portfolios, 
-    features, 
-    virtualReality, 
-    benefits, 
-    benefitButtons
-  }
+    clients,
+    portfolios,
+    features,
+    virtualReality,
+    benefits,
+    benefitButtons,
+  };
 
   return (
     <main id="content">
@@ -72,7 +78,7 @@ export default function Home({ language }) {
         <VR />
         <Benefit />
       </AppContext.Provider>
-      <CTA cta={cta}/>
+      <CTA cta={cta} />
     </main>
   );
 }

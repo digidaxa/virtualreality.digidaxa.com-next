@@ -1,6 +1,5 @@
-import { useContext } from "react";
-import { AppContext } from "../../../context/app-context";
-
+import { useContext } from 'react';
+import { AppContext } from '../../context/app-context';
 
 export default function BenefitBody() {
   const context = useContext(AppContext);

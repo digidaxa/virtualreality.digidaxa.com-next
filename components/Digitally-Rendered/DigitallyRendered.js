@@ -1,49 +1,50 @@
 import { useEffect } from 'react';
 import Hero from './Hero';
 import Benefit from './Benefit';
-import CTA from '../../partials/CTA';
+import CTA from '../partials/CTA';
 import Featured from './Featured';
 import Comparison from './Comparison';
 
-import { 
-  benefitsData, 
-  featuredData, 
-  comparisonData, 
-  ctaData 
-} from '../../../utils/data/id/DigitallyRenderedData';
+import {
+  benefitsData,
+  featuredData,
+  comparisonData,
+  ctaData,
+} from '../../pages/api/data/id/DigitallyRenderedData';
 
-import { 
-  benefitsDataEn, 
-  featuredDataEn, 
-  comparisonDataEn, 
-  ctaDataEn 
-} from '../../../utils/data/en/DigitallyRenderedData';
+import {
+  benefitsDataEn,
+  featuredDataEn,
+  comparisonDataEn,
+  ctaDataEn,
+} from '../../pages/api/data/en/DigitallyRenderedData';
 
-import { AppContext } from '../../../context/app-context';
+import { AppContext } from '../../context/app-context';
 
 export default function DigitallyRendered({ language }) {
-  useEffect(function () {
-    document.title = 'Digitally Rendered - Virtual Reality Digidaxa'
+  useEffect(() => {
+    document.title = 'Digitally Rendered - Virtual Reality Digidaxa';
   }, []);
 
-  let benefits, featured, comparison, cta;
+  let benefits; let featured; let comparison; let
+    cta;
   if (language === 'id') {
-    benefits =  benefitsData()
-    featured = featuredData()
-    comparison = comparisonData()
+    benefits = benefitsData();
+    featured = featuredData();
+    comparison = comparisonData();
     cta = ctaData();
   } else {
-    benefits =  benefitsDataEn()
-    featured = featuredDataEn()
-    comparison = comparisonDataEn()
+    benefits = benefitsDataEn();
+    featured = featuredDataEn();
+    comparison = comparisonDataEn();
     cta = ctaDataEn();
   }
 
   const appContextValue = {
     benefits,
     featured,
-    comparison
-  }
+    comparison,
+  };
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function DigitallyRendered({ language }) {
           <Featured />
           <Comparison />
         </AppContext.Provider>
-        <CTA cta={cta}/>
+        <CTA cta={cta} />
       </main>
     </>
   );
