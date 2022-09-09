@@ -51,7 +51,7 @@ const portfolioData = () => [
     title: 'Firda Dental Care Virtual Reality',
     url: 'https://firdadentalcare.digidaxa.com',
     img: 'firda.webp',
-  }
+  },
 ];
 
 const featuresData = () => [
@@ -180,8 +180,8 @@ const ctaData = () => [
     id: 0,
     title: 'Siap mengubah bisnis Anda dengan kami?',
     text: '',
-    button: 'Dapatkan Sekarang'
-  }
+    button: 'Dapatkan Sekarang',
+  },
 ];
 
 export {
@@ -191,5 +191,5 @@ export {
   virtualRealityData,
   benefitsData,
   benefitButtonsData,
-  ctaData
+  ctaData,
 };
