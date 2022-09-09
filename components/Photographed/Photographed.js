@@ -1,32 +1,33 @@
+import { useEffect } from 'react';
 import Hero from './Hero';
 import Reinforcement from './Reinforcement';
 import Benefit from './Benefit';
-import CTA from '../../partials/CTA';
+import CTA from '../partials/CTA';
 import Featured from './Featured';
-import { useEffect } from 'react';
 
-import { 
-  reinforcementQuote, 
-  benefitsData, 
-  featuredData, 
-  ctaData 
-} from '../../../utils/data/id/PhotographedData';
+import {
+  reinforcementQuote,
+  benefitsData,
+  featuredData,
+  ctaData,
+} from '../../pages/api/data/id/PhotographedData';
 
-import { 
-  reinforcementQuoteEn, 
-  benefitsDataEn, 
-  featuredDataEn, 
-  ctaDataEn 
-} from '../../../utils/data/en/PhotographedData';
+import {
+  reinforcementQuoteEn,
+  benefitsDataEn,
+  featuredDataEn,
+  ctaDataEn,
+} from '../../pages/api/data/en/PhotographedData';
 
-import { AppContext } from '../../../context/app-context';
+import { AppContext } from '../../context/app-context';
 
 export default function Photographed({ language }) {
-  useEffect(function () {
-    document.title = 'Photographed - Virtual Reality Digidaxa'
+  useEffect(() => {
+    document.title = 'Photographed - Virtual Reality Digidaxa';
   }, []);
 
-  let reinforcement, benefits, featured, cta;
+  let reinforcement; let benefits; let featured; let
+    cta;
   if (language === 'id') {
     reinforcement = reinforcementQuote();
     benefits = benefitsData();
@@ -42,8 +43,8 @@ export default function Photographed({ language }) {
   const appContextValue = {
     reinforcement,
     benefits,
-    featured
-  }
+    featured,
+  };
 
   return (
     <>
@@ -58,4 +59,4 @@ export default function Photographed({ language }) {
       </main>
     </>
   );
-} 
+}

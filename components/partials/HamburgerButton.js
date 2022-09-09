@@ -1,4 +1,4 @@
-function HamburgerButton({ isActiveHamburger, onClickHamburger }) {
+export default function HamburgerButton({ isActiveHamburger, onClickHamburger }) {
   return (
     <button
       id="hamburger"
@@ -13,5 +13,3 @@ function HamburgerButton({ isActiveHamburger, onClickHamburger }) {
     </button>
   );
 }
-
-export default HamburgerButton;

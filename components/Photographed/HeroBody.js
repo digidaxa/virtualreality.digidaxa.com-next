@@ -18,9 +18,10 @@ export default function HeroBody() {
       </div>
       <Link
         to="content"
-        spy={true}
-        smooth={true}
-        className="cursor-pointer h-12 w-12 text-xl text-light flex border-2 border-light bg-transparent justify-center items-center rounded-full shadow-lg shadow-dark/50 transition-all duration-200 hover:bg-light hover:text-dark animate-bounce">
+        spy
+        smooth
+        className="cursor-pointer h-12 w-12 text-xl text-light flex border-2 border-light bg-transparent justify-center items-center rounded-full shadow-lg shadow-dark/50 transition-all duration-200 hover:bg-light hover:text-dark animate-bounce"
+      >
         <FaArrowDown />
       </Link>
     </>

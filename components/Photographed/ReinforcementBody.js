@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
-import { AppContext } from '../../../context/app-context';
+import { AppContext } from '../../context/app-context';
 
 export default function ReinforcementBody() {
   const context = useContext(AppContext);

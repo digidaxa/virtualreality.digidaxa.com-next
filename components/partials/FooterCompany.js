@@ -11,7 +11,8 @@ export default function FooterCompany({ companies }) {
               <li
                 key={company.id}
                 id={company.id}
-                className="mb-4">
+                className="mb-4"
+              >
                 <a
                   href={company.url}
                   className="text-base font-medium text-dark hover:border-b-2 border-primary hover:text-primary lg:text-lg dark:text-light dark:hover:text-primary"

@@ -11,11 +11,12 @@ export default function FooterServices({ services }) {
               <li
                 key={service.id}
                 id={service.id}
-                className="mb-4">
+                className="mb-4"
+              >
                 <a
                   href={service.url}
                   className="text-base font-medium text-dark hover:border-b-2 border-primary hover:text-primary lg:text-lg dark:text-light dark:hover:text-primary"
-                  target={"_blank"}
+                  target="_blank"
                   rel="noreferrer"
                 >
                   {service.title}
