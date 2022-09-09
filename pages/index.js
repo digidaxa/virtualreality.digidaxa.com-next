@@ -1,7 +1,102 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import Hero from '../components/Home/Hero';
+import Client from '../components/Home/Client';
+import Portfolio from '../components/Home/Portfolio';
+import Feature from '../components/Home/Feature';
+import VR from '../components/Home/VR';
+import Benefit from '../components/Home/Benefit';
+import CTA from '../components/partials/CTA';
+import Header from '../components/partials/Header';
+import Footer from '../components/partials/Footer';
+
+import BacktoTopButton from '../components/partials/BacktoTopButton';
+
+import {
+  clientsData,
+  portfolioData,
+  featuresData,
+  virtualRealityData,
+  benefitsData,
+  benefitButtonsData,
+  ctaData,
+} from './api/data/id/HomeData';
+
+import {
+  clientsDataEn,
+  portfolioDataEn,
+  featuresDataEn,
+  virtualRealityDataEn,
+  benefitsDataEn,
+  benefitButtonsDataEn,
+  ctaDataEn,
+} from './api/data/en/HomeData';
+
+import { AppContext } from '../context/app-context';
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
+
+  let lang;
+  useEffect(() => {
+    if (localStorage.language === 'en') {
+      lang = 'en';
+    } else {
+      lang = 'id';
+    }
+  });
+
+  const [language, setLanguage] = useState(lang);
+
+  const onClickLanguageHandler = () => {
+    const toggleLanguage = document.querySelector('#toggleLanguage');
+    if (toggleLanguage.checked) {
+      localStorage.language = 'id';
+      i18n.changeLanguage('id');
+      setLanguage('id');
+    } else {
+      localStorage.language = 'en';
+      i18n.changeLanguage('en');
+      setLanguage('en');
+    }
+  };
+
+  let clients;
+  let portfolios;
+  let features;
+  let virtualReality;
+  let benefits;
+  let benefitButtons;
+  let cta;
+
+  if (language === 'id') {
+    clients = clientsData();
+    portfolios = portfolioData();
+    features = featuresData();
+    virtualReality = virtualRealityData();
+    benefits = benefitsData();
+    benefitButtons = benefitButtonsData();
+    cta = ctaData();
+  } else {
+    clients = clientsDataEn();
+    portfolios = portfolioDataEn();
+    features = featuresDataEn();
+    virtualReality = virtualRealityDataEn();
+    benefits = benefitsDataEn();
+    benefitButtons = benefitButtonsDataEn();
+    cta = ctaDataEn();
+  }
+
+  const appContextValue = {
+    clients,
+    portfolios,
+    features,
+    virtualReality,
+    benefits,
+    benefitButtons,
+  };
+
   return (
     <div>
       <Head>
@@ -10,63 +105,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="text-5xl">
-          Welcome to
-          {' '}
-          <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('skipButtonText')}</a>
 
-        <p>
-          Get started by editing
-          {' '}
-          <code>pages/index.js</code>
-        </p>
+      <Header
+        language={language}
+        onClickLanguage={onClickLanguageHandler}
+      />
 
-        <div>
-          <a href="https://nextjs.org/docs">
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn">
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main id="content">
+        <Hero />
+        <AppContext.Provider value={appContextValue}>
+          <Client />
+          <Portfolio />
+          <Feature />
+          <VR />
+          <Benefit />
+        </AppContext.Provider>
+        <CTA cta={cta} />
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          {' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <BacktoTopButton />
+      <Footer language={language} />
     </div>
   );
 }

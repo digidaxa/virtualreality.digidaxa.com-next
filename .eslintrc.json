@@ -20,6 +20,13 @@
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", "tsx"] }],
         "react/react-in-jsx-scope": 0,
-        "linebreak-style": 0
+        "linebreak-style": 0,
+        "react/prop-types": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/no-unknown-property": 0,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "react/jsx-no-constructed-context-values": 0,
+        "react/destructuring-assignment": 0
     }
 }
