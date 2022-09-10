@@ -11,7 +11,7 @@ export default function ComparisonBody() {
           .map((compare) => (
             <div
               key={compare.id}
-              className={`bg-primary pt-10 pb-8 px-8 rounded-md shadow-2xl shadow-dark/30 max-w-lg lg:max-w-md hover:translate-y-2 hover:shadow-2xl hover:shadow-primary/70 transition-all duration-100 ease-in-out dark:hover:shadow-primary/50 ${(compare.id === 1) && 'bg-light dark:bg-black/40'} dark:shadow-black`}
+              className={`pt-10 pb-8 px-8 rounded-md shadow-2xl shadow-dark/30 w-full md:max-w-lg lg:max-w-md hover:translate-y-2 hover:shadow-2xl hover:shadow-primary/70 transition-all duration-100 ease-in-out dark:hover:shadow-primary/50 ${(compare.id === 1) ? 'bg-light dark:bg-light/10' : 'bg-primary'} dark:shadow-black`}
             >
               <h3 className={`text-3xl font-semibold text-center ${(compare.id === 1)
                 ? 'text-dark dark:text-light'
