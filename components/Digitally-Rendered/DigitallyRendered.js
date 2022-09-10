@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Hero from './Hero';
 import Benefit from './Benefit';
-import CTA from '../partials/CTA';
+import CTA from '../Partials/CTA';
 import Featured from './Featured';
 import Comparison from './Comparison';
 
