@@ -35,7 +35,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('skipButtonText')}</a>
-
       <Header
         language={language}
         onClickLanguage={onClickLanguageHandler}
