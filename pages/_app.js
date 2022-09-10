@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import Header from '../components/partials/Header';
-import Footer from '../components/partials/Footer';
-import BacktoTopButton from '../components/partials/BacktoTopButton';
+import Header from '../components/Partials/Header';
+import Footer from '../components/Partials/Footer';
+import BacktoTopButton from '../components/Partials/BacktoTopButton';
 
 function MyApp({ Component, pageProps }) {
   const { t, i18n } = useTranslation();

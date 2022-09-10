@@ -37,7 +37,7 @@ export default function Navbar({
               href="/photographed"
               onClick={onClickDropdownLink}
             >
-              <span className={router.pathname === '/photographed' ? 'bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}>
+              <span className={router.pathname === '/photographed' ? 'cursor-pointer bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'cursor-pointer dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}>
                 {t('header.photographed')}
               </span>
             </Link>
@@ -45,7 +45,7 @@ export default function Navbar({
               href="/digitally-rendered"
             >
               <span
-                className={router.pathname === '/digitally-rendered' ? 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary bg-gray-200 dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
+                className={router.pathname === '/digitally-rendered' ? 'cursor-pointer dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary bg-gray-200 dark:bg-black/30' : 'cursor-pointer dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
                 onClick={onClickDropdownLink}
               >
                 {t('header.digitally')}
