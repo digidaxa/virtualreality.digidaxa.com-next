@@ -30,7 +30,7 @@ export default function Footer({ language }) {
   }
 
   return (
-    <section id="footer" className="dark:bg-dark">
+    <footer className="dark:bg-dark">
       <div className="container bg-primary/0 pt-36">
         <div className="flex flex-wrap">
           <div className="mb-11 w-full px-4 lg:w-1/2">
@@ -55,6 +55,6 @@ export default function Footer({ language }) {
         </div>
       </div>
       <FooterCopyright />
-    </section>
+    </footer>
   );
 }
