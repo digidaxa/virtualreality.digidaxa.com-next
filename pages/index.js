@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 import Hero from '../components/Home/Hero';
 import Client from '../components/Home/Client';
 import Portfolio from '../components/Home/Portfolio';
@@ -8,10 +6,6 @@ import Feature from '../components/Home/Feature';
 import VR from '../components/Home/VR';
 import Benefit from '../components/Home/Benefit';
 import CTA from '../components/partials/CTA';
-import Header from '../components/partials/Header';
-import Footer from '../components/partials/Footer';
-
-import BacktoTopButton from '../components/partials/BacktoTopButton';
 
 import {
   clientsData,
@@ -35,33 +29,7 @@ import {
 
 import { AppContext } from '../context/app-context';
 
-export default function Home() {
-  const { t, i18n } = useTranslation();
-
-  let lang;
-  useEffect(() => {
-    if (localStorage.language === 'en') {
-      lang = 'en';
-    } else {
-      lang = 'id';
-    }
-  });
-
-  const [language, setLanguage] = useState(lang);
-
-  const onClickLanguageHandler = () => {
-    const toggleLanguage = document.querySelector('#toggleLanguage');
-    if (toggleLanguage.checked) {
-      localStorage.language = 'id';
-      i18n.changeLanguage('id');
-      setLanguage('id');
-    } else {
-      localStorage.language = 'en';
-      i18n.changeLanguage('en');
-      setLanguage('en');
-    }
-  };
-
+export default function Home({ language }) {
   let clients;
   let portfolios;
   let features;
@@ -107,13 +75,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('skipButtonText')}</a>
-
-      <Header
-        language={language}
-        onClickLanguage={onClickLanguageHandler}
-      />
-
       <main id="content">
         <Hero />
         <AppContext.Provider value={appContextValue}>
@@ -126,8 +87,6 @@ export default function Home() {
         <CTA cta={cta} />
       </main>
 
-      <BacktoTopButton />
-      <Footer language={language} />
     </>
   );
 }
