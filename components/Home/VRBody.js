@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Image from 'next/image';
 import { AppContext } from '../../context/app-context';
 
 export default function VRBody() {
@@ -15,11 +14,11 @@ export default function VRBody() {
               className="w-full pt-6 pb-10 px-4 flex flex-col text-center items-center xl:w-1/2"
             >
               <h2 className="w-10/12 text-light text-2xl mb-5 border-b-2 pb-4 border-light sm:text-3xl lg:text-4xl">{vr.title}</h2>
-              <div className="flex flex-wrap mb-5">
+              <div className="flex flex-wrap mb-5 relative">
                 {
                   vr.images
                     .map((image) => (
-                      <Image
+                      <img
                         key={image.id}
                         src={image.src}
                         alt={image.alt}

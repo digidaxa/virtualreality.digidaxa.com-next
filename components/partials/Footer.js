@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import FooterAddress from './FooterAddress';
 import SocialMediaIcon from './SocialMediaIcon';
 import FooterCompany from './FooterCompany';
@@ -36,10 +35,10 @@ export default function Footer({ language }) {
         <div className="flex flex-wrap">
           <div className="mb-11 w-full px-4 lg:w-1/2">
             <div className="mb-5 flex items-center">
-              <Image
+              <img
                 src="/img/logo graphic + typeface.webp"
                 alt="Logo Digidaxa"
-                className="mr-2 h-9 sm:h-10 xl:h-14"
+                className="mr-2 h-9 sm:h-10 lg:h-14"
               />
               {' '}
               <span className="text-2xl font-light text-secondary sm:text-3xl xl:text-4xl">

@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Image from 'next/image';
 import { AppContext } from '../../context/app-context';
 
 export default function FeaturedBody() {
@@ -21,7 +20,7 @@ export default function FeaturedBody() {
                 </p>
               </div>
               <div className={`absolute z-[1] ${(feat.id % 2 === 0) ? 'bg-gradient-to-r' : 'bg-gradient-to-l right-0'} from-[#BDF7F1] via-[#BDF7F1] min-h-full w-full lg:w-[75%] dark:from-secondary dark:via-secondary transition-all ease-out duration-300 group-hover:w-full group-hover:bg-[#BDF7F1] dark:group-hover:bg-secondary`} />
-              <Image
+              <img
                 className={`absolute object-cover w-[80%] h-full ${(feat.id % 2 === 0) ? 'right-0' : 'left-0'} dark:opacity-70`}
                 src={feat.image}
                 alt={feat.title}

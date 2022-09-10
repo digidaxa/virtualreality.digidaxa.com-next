@@ -18,9 +18,10 @@ export default function Navbar({
         <li className="mb-1 grup">
           <Link
             href="/"
-            className={router.pathname === '/' ? 'cursor-pointer nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:hover:text-primary dark:text-primary nav-link-active' : 'cursor-pointer nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary'}
           >
-            {t('header.home')}
+            <span className={router.pathname === '/' ? 'cursor-pointer nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:hover:text-primary dark:text-primary nav-link-active' : 'cursor-pointer nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary'}>
+              {t('header.home')}
+            </span>
           </Link>
         </li>
         <li className="mb-1">
@@ -34,17 +35,21 @@ export default function Navbar({
           <div className={`mx-3 px-2 py-2 bg-white absolute rounded-md shadow ${isDropdownOpen ? '' : 'hidden'} dark:text-light dark:bg-dark dark:shadow-black/70`}>
             <Link
               href="/photographed"
-              className={router.pathname === '/photographed' ? 'bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
               onClick={onClickDropdownLink}
             >
-              {t('header.photographed')}
+              <span className={router.pathname === '/photographed' ? 'bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}>
+                {t('header.photographed')}
+              </span>
             </Link>
             <Link
               href="/digitally-rendered"
-              className={router.pathname === '/digitally-rendered' ? 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary bg-gray-200 dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
-              onClick={onClickDropdownLink}
             >
-              {t('header.digitally')}
+              <span
+                className={router.pathname === '/digitally-rendered' ? 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary bg-gray-200 dark:bg-black/30' : 'dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
+                onClick={onClickDropdownLink}
+              >
+                {t('header.digitally')}
+              </span>
             </Link>
           </div>
         </li>
