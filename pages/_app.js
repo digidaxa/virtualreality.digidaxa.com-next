@@ -1,6 +1,9 @@
 import '../styles/globals.css';
-import { useTranslation } from 'react-i18next';
+
+import { appWithTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Header from '../components/Partials/Header';
 import Footer from '../components/Partials/Footer';
 import BacktoTopButton from '../components/Partials/BacktoTopButton';
@@ -46,4 +49,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

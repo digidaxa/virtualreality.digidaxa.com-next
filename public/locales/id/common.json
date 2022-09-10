@@ -1,0 +1,15 @@
+{
+  "skipButtonText": "Menuju ke konten",
+  "header": {
+    "home": "Beranda",
+    "virtualReality": "Virtual Reality",
+    "photographed": "Photographed",
+    "digitally": "Digitally Rendered",
+    "aboutUs": "Tentang Kami",
+    "blog": "Blog",
+    "contactUs": "Hubungi Kami"
+  }
+  "footer": {
+    "address": "Jalan Raya Dongos, Desa Dongos RT. 02/RW. 04,\nKec. Kedung, Kota Jepara,\nJawa Tengah 59463." 
+  }
+}

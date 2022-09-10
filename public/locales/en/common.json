@@ -1,0 +1,15 @@
+{
+  "skipButtonText": "Go to content",
+  "header": {
+    "home": "Home",
+    "virtualReality": "Virtual Reality",
+    "photographed": "Photographed",
+    "digitally": "Digitally Rendered",
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "contactUs": "Contact Us"
+  },
+  "footer": {
+    "address": "Dongos Highway, Dongos Village Neighbourhood. 02/Hamlet. 04,\nKedung Sub-district, Jepara Regency,\nCentral Java 59463." 
+  }
+}
