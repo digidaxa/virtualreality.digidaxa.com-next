@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Hero from '../components/Digitally-Rendered/Hero';
 import Benefit from '../components/Digitally-Rendered/Benefit';
 import CTA from '../components/Partials/CTA';
@@ -60,3 +61,8 @@ export default function DigitallyRendered({ language }) {
     </>
   );
 }
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'digitally-rendered'])),
+  },
+});

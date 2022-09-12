@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 export default function FeatureHeader() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('home');
 
   return (
     <div className="mx-auto text-center mb-16">
@@ -9,7 +9,7 @@ export default function FeatureHeader() {
         Features
       </h4>
       <h2 className="font-semibold text-dark text-2xl mb-2 sm:text-3xl lg:text-4xl dark:text-light">
-        {t('page.home.features.title')}
+        {t('features.title')}
       </h2>
     </div>
   );

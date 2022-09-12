@@ -1,3 +1,5 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import Head from 'next/head';
 import Hero from '../components/Home/Hero';
 import Client from '../components/Home/Client';
@@ -90,3 +92,9 @@ export default function Home({ language }) {
     </>
   );
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'home'])),
+  },
+});

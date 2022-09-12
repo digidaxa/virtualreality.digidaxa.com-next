@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Hero from '../components/Photographed/Hero';
 import Reinforcement from '../components/Photographed/Reinforcement';
 import Benefit from '../components/Photographed/Benefit';
@@ -60,3 +61,8 @@ export default function Photographed({ language }) {
     </>
   );
 }
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'photographed'])),
+  },
+});

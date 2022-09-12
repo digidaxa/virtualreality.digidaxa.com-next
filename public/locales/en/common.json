@@ -1,4 +1,7 @@
 {
+  "coba": {
+    "greeting" : "Hello World"
+  },
   "skipButtonText": "Go to content",
   "header": {
     "home": "Home",

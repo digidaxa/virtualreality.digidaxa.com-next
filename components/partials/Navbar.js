@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaAngleDown } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 export default function Navbar({
   onClickDropdown, onClickDropdownLink, isActiveHamburger, isDropdownOpen,

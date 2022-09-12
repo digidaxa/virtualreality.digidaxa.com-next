@@ -1,15 +1,16 @@
 import '../styles/globals.css';
 
-import { appWithTranslation } from 'next-i18next';
+import { appWithTranslation, useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import Header from '../components/Partials/Header';
 import Footer from '../components/Partials/Footer';
 import BacktoTopButton from '../components/Partials/BacktoTopButton';
 
 function MyApp({ Component, pageProps }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation('common');
 
   let lang;
   useEffect(() => {
@@ -26,11 +27,11 @@ function MyApp({ Component, pageProps }) {
     const toggleLanguage = document.querySelector('#toggleLanguage');
     if (toggleLanguage.checked) {
       localStorage.language = 'id';
-      i18n.changeLanguage('id');
+      // i18n.changeLanguage('id');
       setLanguage('id');
     } else {
       localStorage.language = 'en';
-      i18n.changeLanguage('en');
+      // i18n.changeLanguage('en');
       setLanguage('en');
     }
   };
@@ -50,3 +51,9 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default appWithTranslation(MyApp);
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+});
