@@ -2,9 +2,9 @@ export default function LanguageButton({ language, onClickLanguage }) {
   let lang;
 
   if (language === 'id') {
-    lang = 'en';
-  } else {
     lang = 'id';
+  } else {
+    lang = 'en';
   }
 
   return (
