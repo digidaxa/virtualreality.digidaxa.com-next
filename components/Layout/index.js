@@ -55,7 +55,7 @@ export default function Layout(props) {
 
       <AppContext.Provider value={appContextValue}>
         <Header />
-        <main id="content">
+        <main id="content" className="z-20">
           {children}
         </main>
         <BacktoTopButton />

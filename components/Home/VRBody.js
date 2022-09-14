@@ -18,12 +18,15 @@ export default function VRBody() {
                 {
                   vr.images
                     .map((image) => (
-                      <picture key={image.id}>
+                      <picture
+                        key={image.id}
+                        className="w-full md:w-1/2 overflow-hidden"
+                      >
                         <source srcSet={image.src} type="image/webp" />
                         <img
                           src={image.src}
                           alt={image.alt}
-                          className="w-full aspect-square object-cover object-center grayscale opacity-70 transition-all duration-150 ease-in-out hover:grayscale-0 hover:opacity-100 hover:scale-110 hover:-translate-y-2 hover:z-10 hover:shadow-2xl md:w-1/2"
+                          className="w-full aspect-square object-cover object-center grayscale opacity-70 transition-all duration-150 ease-in-out hover:grayscale-0 hover:opacity-100 hover:scale-110 hover:-translate-y-2 hover:z-10 hover:shadow-2xl"
                         />
                       </picture>
                     ))
