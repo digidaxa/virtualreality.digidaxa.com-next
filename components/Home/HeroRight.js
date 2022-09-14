@@ -9,7 +9,7 @@ export default function HeroRight() {
       <div className="relative mb-5 md:mt-10 lg:mt-0 lg:right-0">
         {/* <img src="/img/hero-image.png" alt="Hero" className="max-w-full mx-auto" /> */}
         <div className="mx-auto max-w-full relative flex flex-wrap items-center justify-center group hover:cursor-grab active:cursor-grabbing h-80 md:h-[400px] lg:h-[500px]">
-          <div className="absolute bg-primary rounded-full transition-all ease-in duration-200 group-hover:blur-xl group-hover:scale-110 w-64 h-64 md:h-80 md:w-80 lg:w-96 lg:h-96" />
+          <div className="absolute rounded-full transition-all ease-in duration-200 group-hover:blur-xl group-hover:scale-110 w-64 h-64 md:h-80 md:w-80 lg:w-96 lg:h-96" />
           <Canvas className="transition-all ease-in duration-300 group-hover:scale-110">
             <OrbitControls
               enableZoom={false}
