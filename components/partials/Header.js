@@ -64,11 +64,14 @@ export default class Header extends React.Component {
             <div className="px-4 flex items-center">
               <Link href="/">
                 <div className="flex items-center cursor-pointer py-6 text-lg font-bold text-primary">
-                  <img
-                    src="/img/logo.webp"
-                    alt="Logo Digidaxa"
-                    className="mr-2 h-8 w-8"
-                  />
+                  <picture>
+                    <source srcSet="/img/logo.webp" type="image/webp" />
+                    <img
+                      src="/img/logo.webp"
+                      alt="Logo Digidaxa"
+                      className="mr-2 h-8 w-8"
+                    />
+                  </picture>
                   {' '}
                   <span className="text-xl text-secondary">
                     Virtual Reality
