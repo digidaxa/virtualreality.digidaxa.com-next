@@ -30,7 +30,7 @@ export default function PorfolioBody() {
               <h2 className="w-full text-right text-dark text-xl ml-auto mb-3 border-b-2 pb-1 border-primary sm:text-2xl md:w-3/4 lg:text-3xl dark:text-light">{portfolio.title}</h2>
               <iframe
                 title={portfolio.title}
-                src={portfolio.id === current && portfolio.url}
+                src={portfolio.id === current ? portfolio.url : ''}
                 allowFullScreen
                 loading="lazy"
                 className={`w-[320px] h-[180px] ${portfolio.id === current ? 'shadow-lg shadow-primary/70 dark:shadow-dark/70' : 'shadow bg-dark/30'} rounded-lg sm:w-[520px] sm:h-[292px] md:w-[640px] md:h-[360px] lg:w-[820px] lg:h-[462px]`}

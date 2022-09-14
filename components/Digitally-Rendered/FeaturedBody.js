@@ -10,7 +10,7 @@ export default function FeaturedBody() {
         context.featured.map((feat) => (
           <div
             key={feat.id}
-            className={`bg-[#FFEFE6] relative rounded-md flex justify-center items-center md:min-h-[160px] lg:min-h-[220px] xl:min-h-[344px] ${(feat.id % 2 !== 0) && 'md:text-right'} dark:bg-black/30 transition-all ease-out duration-200 hover:md:min-h-[180px] hover:lg:min-h-[260px] group hover:xl:min-h-[400px] hover:-translate-y-10`}
+            className={`bg-[#FFEFE6] relative rounded-md flex justify-center items-center md:min-h-[160px] lg:min-h-[220px] xl:min-h-[344px] ${(feat.id % 2 !== 0) ? 'md:text-right' : ''} dark:bg-black/30 transition-all ease-out duration-200 hover:md:min-h-[180px] hover:lg:min-h-[260px] group hover:xl:min-h-[400px] hover:-translate-y-10`}
           >
             <div
               className={`${(feat.id % 2 === 0)
@@ -25,7 +25,7 @@ export default function FeaturedBody() {
               ? 'ml-auto md:pl-0 md:pr-10'
               : 'mr-auto md:pr-0 md:pl-10'}`}
             >
-              <p className={`text-dark text-center md:text-left md:text-sm lg:text-lg lg:leading-normal xl:text-2xl xl:leading-relaxed ${(feat.id % 2 !== 0) && 'md:text-right'} dark:text-light`}>
+              <p className={`text-dark text-center md:text-left md:text-sm lg:text-lg lg:leading-normal xl:text-2xl xl:leading-relaxed ${(feat.id % 2 !== 0) ? 'md:text-right' : ''} dark:text-light`}>
                 {feat.content}
               </p>
             </div>

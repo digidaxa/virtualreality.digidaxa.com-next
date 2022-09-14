@@ -2,10 +2,13 @@ import React from 'react';
 import autoBindReact from 'auto-bind/react';
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import HamburgerButton from './HamburgerButton';
 import Navbar from './Navbar';
-import DarkModeToggle from './DarkModeToggle';
+
 import LanguageButton from './LanguageButton';
+
+const DarkModeToggle = dynamic(() => import('./DarkModeToggle'), { ssr: false });
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -13,30 +16,11 @@ export default class Header extends React.Component {
     this.state = {
       isActiveHamburger: false,
       isDropdownOpen: false,
-      isDark: false,
     };
     autoBindReact(this);
   }
 
   componentDidMount() {
-    if (localStorage.theme === 'dark') {
-      this.state = {
-        isActiveHamburger: false,
-        isDropdownOpen: false,
-        isDark: true,
-      };
-    }
-
-    if (
-      localStorage.theme === 'dark'
-      || (!('theme' in localStorage)
-        && window.matchMedia('(prefers-color-scheme: light)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
     window.onscroll = () => {
       const header = document.querySelector('header');
       const backtotop = document.querySelector('#backtotop');
@@ -72,22 +56,6 @@ export default class Header extends React.Component {
     });
   };
 
-  onClickToggleDarkHandler = () => {
-    const toggleDarkMode = document.querySelector('#toggleDarkMode');
-
-    if (toggleDarkMode.checked) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
-    }
-
-    this.setState((prevState) => ({
-      isDark: !prevState.isDark,
-    }));
-  };
-
   render() {
     return (
       <header className="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
@@ -110,10 +78,7 @@ export default class Header extends React.Component {
               <LanguageButton />
             </div>
             <div className="flex items-center justify-center px-4 lg:flex-row-reverse">
-              <DarkModeToggle
-                isDark={this.state.isDark}
-                onClickToggleDark={this.onClickToggleDarkHandler}
-              />
+              <DarkModeToggle />
               <HamburgerButton
                 isActiveHamburger={this.state.isActiveHamburger}
                 onClickHamburger={this.onClickHamburgerHandler}

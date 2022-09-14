@@ -35,9 +35,11 @@ export default function Navbar({
           <div className={`mx-3 px-2 py-2 bg-white absolute rounded-md shadow ${isDropdownOpen ? '' : 'hidden'} dark:text-light dark:bg-dark dark:shadow-black/70`}>
             <Link
               href="/photographed"
-              onClick={onClickDropdownLink}
             >
-              <span className={router.pathname === '/photographed' ? 'cursor-pointer bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'cursor-pointer dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}>
+              <span
+                className={router.pathname === '/photographed' ? 'cursor-pointer bg-gray-200 dropdown-link hover:bg-gray-200 dark:hover:bg-black/30 text-primary dark:bg-black/30' : 'cursor-pointer dropdown-link hover:bg-gray-200 dark:hover:bg-black/30'}
+                onClick={onClickDropdownLink}
+              >
                 {t('header.photographed')}
               </span>
             </Link>
