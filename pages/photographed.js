@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Hero from '../components/Photographed/Hero';
 import Reinforcement from '../components/Photographed/Reinforcement';
@@ -21,12 +20,9 @@ import {
 } from './api/data/en/PhotographedData';
 
 import { AppContext } from '../context/app-context';
+import Layout from '../components/Layout';
 
 export default function Photographed({ language }) {
-  useEffect(() => {
-    document.title = 'Photographed - Virtual Reality Digidaxa';
-  }, []);
-
   let reinforcement; let benefits; let featured; let
     cta;
   if (language === 'id') {
@@ -48,17 +44,18 @@ export default function Photographed({ language }) {
   };
 
   return (
-    <>
+    <Layout
+      title="Photographed - Virtual Reality Digidaxa"
+      description="Hadirkan Pengalaman Nyata Virtual Tour dengan Teknologi Imersif."
+    >
       <Hero />
-      <main id="content" className="z-20">
-        <AppContext.Provider value={appContextValue}>
-          <Reinforcement />
-          <Benefit />
-          <Featured />
-        </AppContext.Provider>
-        <CTA cta={cta} />
-      </main>
-    </>
+      <AppContext.Provider value={appContextValue}>
+        <Reinforcement />
+        <Benefit />
+        <Featured />
+      </AppContext.Provider>
+      <CTA cta={cta} />
+    </Layout>
   );
 }
 export const getStaticProps = async ({ locale }) => ({

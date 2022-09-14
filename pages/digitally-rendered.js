@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Hero from '../components/Digitally-Rendered/Hero';
 import Benefit from '../components/Digitally-Rendered/Benefit';
@@ -21,12 +20,9 @@ import {
 } from './api/data/en/DigitallyRenderedData';
 
 import { AppContext } from '../context/app-context';
+import Layout from '../components/Layout';
 
 export default function DigitallyRendered({ language }) {
-  useEffect(() => {
-    document.title = 'Digitally Rendered - Virtual Reality Digidaxa';
-  }, []);
-
   let benefits; let featured; let comparison; let
     cta;
   if (language === 'id') {
@@ -48,17 +44,18 @@ export default function DigitallyRendered({ language }) {
   };
 
   return (
-    <>
+    <Layout
+      title="Digitally Rendered - Virtual Reality Digidaxa"
+      description="Berbelanja Lebih Interaktif Di Toko Ritel Virtual."
+    >
       <Hero />
-      <main id="content" className="z-20">
-        <AppContext.Provider value={appContextValue}>
-          <Benefit />
-          <Featured />
-          <Comparison />
-        </AppContext.Provider>
-        <CTA cta={cta} />
-      </main>
-    </>
+      <AppContext.Provider value={appContextValue}>
+        <Benefit />
+        <Featured />
+        <Comparison />
+      </AppContext.Provider>
+      <CTA cta={cta} />
+    </Layout>
   );
 }
 export const getStaticProps = async ({ locale }) => ({

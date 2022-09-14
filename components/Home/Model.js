@@ -15,4 +15,4 @@ export default function Model(props) {
     </group>
   );
 }
-useGLTF.preload('/vr_glasses.glb');
+useGLTF.preload('/models/vr_glasses.glb');
