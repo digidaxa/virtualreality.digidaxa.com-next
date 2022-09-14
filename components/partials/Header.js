@@ -19,7 +19,6 @@ export default class Header extends React.Component {
   }
 
   componentDidMount() {
-    // console.log(props.language);
     if (localStorage.theme === 'dark') {
       this.state = {
         isActiveHamburger: false,
@@ -36,10 +35,6 @@ export default class Header extends React.Component {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
-    }
-
-    if ('language' in localStorage) {
-      localStorage.setItem('language', 'id');
     }
 
     window.onscroll = () => {
@@ -112,10 +107,7 @@ export default class Header extends React.Component {
                   </span>
                 </div>
               </Link>
-              <LanguageButton
-                language={this.props.language}
-                onClickLanguage={this.props.onClickLanguage}
-              />
+              <LanguageButton />
             </div>
             <div className="flex items-center justify-center px-4 lg:flex-row-reverse">
               <DarkModeToggle

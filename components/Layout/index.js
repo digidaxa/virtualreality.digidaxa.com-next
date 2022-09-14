@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
 import BacktoTopButton from '../Partials/BacktoTopButton';
+import { AppContext } from '../../context/app-context';
 
 export default function Layout(props) {
   const { children, title, description } = props;
@@ -23,6 +24,11 @@ export default function Layout(props) {
   const onClickLanguageHandler = (lng) => {
     changeLanguage(lng);
     setLanguage(lng);
+  };
+
+  const appContextValue = {
+    language,
+    onClickLanguageHandler,
   };
 
   return (
@@ -44,20 +50,17 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('common:skipButtonText')}</a>
-      <Header
-        language={language}
-        onClickLanguage={onClickLanguageHandler}
-      />
-      <main
-        id="content"
-        language={language}
-      >
-        {children}
 
-      </main>
-      <BacktoTopButton />
-      <Footer language={language} />
+      <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('common:skipButtonText')}</a>
+
+      <AppContext.Provider value={appContextValue}>
+        <Header />
+        <main id="content">
+          {children}
+        </main>
+        <BacktoTopButton />
+        <Footer />
+      </AppContext.Provider>
     </>
   );
 }
