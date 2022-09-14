@@ -49,7 +49,13 @@ export default function Layout(props) {
         language={language}
         onClickLanguage={onClickLanguageHandler}
       />
-      <main language={language}>{children}</main>
+      <main
+        id="content"
+        language={language}
+      >
+        {children}
+
+      </main>
       <BacktoTopButton />
       <Footer language={language} />
     </>

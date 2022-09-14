@@ -72,17 +72,15 @@ export default function Home({ language }) {
       title="Virtual Reality Digidaxa - Make Good Visualization Your Bussiness with Virtual Reality"
       description="Solusi bangun ekosistem virtual bisnismu, mudahkan proses penjualan, dan buat pelanggan terkesan dengan virtual reality."
     >
-      <main id="content">
-        <Hero />
-        <AppContext.Provider value={appContextValue}>
-          <Client />
-          <Portfolio />
-          <Feature />
-          <VR />
-          <Benefit />
-        </AppContext.Provider>
-        <CTA cta={cta} />
-      </main>
+      <Hero />
+      <AppContext.Provider value={appContextValue}>
+        <Client />
+        <Portfolio />
+        <Feature />
+        <VR />
+        <Benefit />
+      </AppContext.Provider>
+      <CTA cta={cta} />
 
     </Layout>
   );
