@@ -42,12 +42,12 @@ export default function Layout(props) {
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://virtualreality.digidaxa.com/" />
-        <meta property="og:image" content="/logo192.png" />
+        <meta property="og:image" content="/img/logo192.png" />
         <meta name="theme-color" content="#FB6107" />
         <meta name="publisher" content="Digidaxa Studio" />
         <meta name="author" content="Digidaxa Studio" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
