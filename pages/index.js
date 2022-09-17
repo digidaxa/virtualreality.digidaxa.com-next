@@ -1,5 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+import { useRouter } from 'next/router';
 import Hero from '../components/Home/Hero';
 import Client from '../components/Home/Client';
 import Portfolio from '../components/Home/Portfolio';
@@ -31,7 +32,9 @@ import {
 import { AppContext } from '../context/app-context';
 import Layout from '../components/Layout';
 
-export default function Home({ language }) {
+export default function Home() {
+  const router = useRouter();
+
   let clients;
   let portfolios;
   let features;
@@ -40,7 +43,7 @@ export default function Home({ language }) {
   let benefitButtons;
   let cta;
 
-  if (language === 'id') {
+  if (router.locale === 'id') {
     clients = clientsData();
     portfolios = portfolioData();
     features = featuresData();

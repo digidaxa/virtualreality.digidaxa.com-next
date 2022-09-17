@@ -1,4 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import Hero from '../components/Digitally-Rendered/Hero';
 import Benefit from '../components/Digitally-Rendered/Benefit';
 import CTA from '../components/Partials/CTA';
@@ -22,10 +23,15 @@ import {
 import { AppContext } from '../context/app-context';
 import Layout from '../components/Layout';
 
-export default function DigitallyRendered({ language }) {
-  let benefits; let featured; let comparison; let
-    cta;
-  if (language === 'id') {
+export default function DigitallyRendered() {
+  const router = useRouter();
+
+  let benefits;
+  let featured;
+  let comparison;
+  let cta;
+
+  if (router.locale === 'id') {
     benefits = benefitsData();
     featured = featuredData();
     comparison = comparisonData();

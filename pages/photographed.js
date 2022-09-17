@@ -1,4 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import Hero from '../components/Photographed/Hero';
 import Reinforcement from '../components/Photographed/Reinforcement';
 import Benefit from '../components/Photographed/Benefit';
@@ -22,10 +23,15 @@ import {
 import { AppContext } from '../context/app-context';
 import Layout from '../components/Layout';
 
-export default function Photographed({ language }) {
-  let reinforcement; let benefits; let featured; let
-    cta;
-  if (language === 'id') {
+export default function Photographed() {
+  const router = useRouter();
+
+  let reinforcement;
+  let benefits;
+  let featured;
+  let cta;
+
+  if (router.locale === 'id') {
     reinforcement = reinforcementQuote();
     benefits = benefitsData();
     featured = featuredData();
