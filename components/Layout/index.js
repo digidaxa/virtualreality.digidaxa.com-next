@@ -43,6 +43,7 @@ export default function Layout(props) {
         <meta name="author" content="Digidaxa Studio" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="9baqhs5op3xQAxMfqY5modcRkK11NL9muQgk0Foa1ns" />
+        <meta name="msvalidate.01" content="47C0F3EB11BA1877012CF1A7E8FABBFB" />
         <link rel="canonical" href="https://virtualreality.digidaxa.com" />
         <link rel="mask-icon" href="/img/favicon.ico" />
         <link rel="icon" href="/img/favicon.ico" />

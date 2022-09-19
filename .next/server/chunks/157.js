@@ -85,6 +85,10 @@ function Layout(props) {
                         name: "google-site-verification",
                         content: "9baqhs5op3xQAxMfqY5modcRkK11NL9muQgk0Foa1ns"
                     }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        name: "msvalidate.01",
+                        content: "47C0F3EB11BA1877012CF1A7E8FABBFB"
+                    }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
                         href: "https://virtualreality.digidaxa.com"
