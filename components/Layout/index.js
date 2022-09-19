@@ -37,18 +37,27 @@ export default function Layout(props) {
         <title>
           {title}
         </title>
+        <meta name="keywords" content="Virtual Reality, Virtual Reality Marketing, Virtual Reality Bisnis, 360 Digitally Rendered, 360 Photographed" />
         <meta name="description" content={description} />
+        <meta name="publisher" content="Digidaxa Studio" />
+        <meta name="author" content="Digidaxa Studio" />
+        <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="9baqhs5op3xQAxMfqY5modcRkK11NL9muQgk0Foa1ns" />
+        <link rel="canonical" href="https://virtualreality.digidaxa.com" />
+        <link rel="mask-icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/favicon.ico" />
+        <meta name="theme-color" content="#FB6107" />
+        <meta name="msapplication-TileColor" content="#FB6107" />
+        <link rel="manifest" href="/manifest.json" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://virtualreality.digidaxa.com/" />
         <meta property="og:image" content="/img/logo192.png" />
-        <meta name="theme-color" content="#FB6107" />
-        <meta name="publisher" content="Digidaxa Studio" />
-        <meta name="author" content="Digidaxa Studio" />
-        <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/img/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/img/logo192.png" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
       </Head>
 
       <a href="#content" className="skip-link focus:top-0 hover:text-light/50">{t('common:skipButtonText')}</a>
