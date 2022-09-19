@@ -1100,7 +1100,7 @@ function Home() {
         benefitButtons
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_Layout__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Z, {
-        title: "Virtual Reality Digidaxa - Make Good Visualization Your Bussiness with Virtual Reality",
+        title: "Virtual Reality Digidaxa - Virtual Reality untuk Advertising Kampanye Marketing dan Branding",
         description: "Solusi bangun ekosistem virtual bisnismu, mudahkan proses penjualan, dan buat pelanggan terkesan dengan virtual reality.",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Home_Hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {}),

@@ -72,7 +72,7 @@ export default function Home() {
 
   return (
     <Layout
-      title="Virtual Reality Digidaxa - Make Good Visualization Your Bussiness with Virtual Reality"
+      title="Virtual Reality Digidaxa - Virtual Reality untuk Advertising Kampanye Marketing dan Branding"
       description="Solusi bangun ekosistem virtual bisnismu, mudahkan proses penjualan, dan buat pelanggan terkesan dengan virtual reality."
     >
       <Hero />

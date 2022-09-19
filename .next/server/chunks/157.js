@@ -63,7 +63,7 @@ function Layout(props) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "keywords",
-                        content: "Virtual Reality, Virtual Reality Marketing, Virtual Reality Bisnis, 360 Digitally Rendered, 360 Photographed"
+                        content: "Virtual Reality, Virtual Reality Kampanye Marketing, Virtual Reality Bisnis, Branding, Advertising 360 Digitally Rendered, 360 Photographed"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",

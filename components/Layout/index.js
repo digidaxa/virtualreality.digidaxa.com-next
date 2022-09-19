@@ -37,7 +37,7 @@ export default function Layout(props) {
         <title>
           {title}
         </title>
-        <meta name="keywords" content="Virtual Reality, Virtual Reality Marketing, Virtual Reality Bisnis, 360 Digitally Rendered, 360 Photographed" />
+        <meta name="keywords" content="Virtual Reality, Virtual Reality Kampanye Marketing, Virtual Reality Bisnis, Branding, Advertising 360 Digitally Rendered, 360 Photographed" />
         <meta name="description" content={description} />
         <meta name="publisher" content="Digidaxa Studio" />
         <meta name="author" content="Digidaxa Studio" />
