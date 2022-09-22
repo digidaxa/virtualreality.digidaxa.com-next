@@ -263,6 +263,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(1853);
 // EXTERNAL MODULE: external "next-i18next"
 var external_next_i18next_ = __webpack_require__(1377);
 ;// CONCATENATED MODULE: ./components/Partials/FooterAddress.js
@@ -588,11 +590,13 @@ const companiesDataEn = ()=>[
 
 
 
-function Footer({ language  }) {
+
+function Footer() {
+    const router = (0,router_.useRouter)();
     let socialMedia;
     let services;
     let companies;
-    if (language === "id") {
+    if (router.locale === "id") {
         socialMedia = socialMediaData();
         services = servicesData();
         companies = companiesData();

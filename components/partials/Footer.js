@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import FooterAddress from './FooterAddress';
 import SocialMediaIcon from './SocialMediaIcon';
 import FooterCompany from './FooterCompany';
@@ -16,10 +17,14 @@ import {
   socialMediaDataEn,
 } from '../../pages/api/data/en/FooterData';
 
-export default function Footer({ language }) {
-  let socialMedia; let services; let
-    companies;
-  if (language === 'id') {
+export default function Footer() {
+  const router = useRouter();
+
+  let socialMedia;
+  let services;
+  let companies;
+
+  if (router.locale === 'id') {
     socialMedia = socialMediaData();
     services = servicesData();
     companies = companiesData();
