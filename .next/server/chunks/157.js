@@ -472,22 +472,22 @@ const companiesData = ()=>[
         {
             id: 0,
             title: "FAQ",
-            url: "https://digidaxa.com/faq"
+            url: "https://www.digidaxa.com/faq"
         },
         {
             id: 1,
             title: "Karir",
-            url: "https://digidaxa.com/karir"
+            url: "https://www.digidaxa.com/karir"
         },
         {
             id: 2,
             title: "Mengapa Digidaxa?",
-            url: "https://digidaxa.com/mengapa-digidaxa"
+            url: "https://www.digidaxa.com/mengapa-digidaxa"
         },
         {
             id: 3,
             title: "Berkolaborasi dengan Kami",
-            url: "https://digidaxa.com/collab"
+            url: "https://www.digidaxa.com/collab"
         }, 
     ];
 
@@ -561,22 +561,22 @@ const companiesDataEn = ()=>[
         {
             id: 0,
             title: "FAQ",
-            url: "https://digidaxa.com/faq"
+            url: "https://www.digidaxa.com/faq"
         },
         {
             id: 1,
             title: "Career",
-            url: "https://digidaxa.com/karir"
+            url: "https://www.digidaxa.com/karir"
         },
         {
             id: 2,
             title: "Why Digidaxa?",
-            url: "https://digidaxa.com/mengapa-digidaxa"
+            url: "https://www.digidaxa.com/mengapa-digidaxa"
         },
         {
             id: 3,
             title: "Collab with Us",
-            url: "https://digidaxa.com/collab"
+            url: "https://www.digidaxa.com/collab"
         }, 
     ];
 
@@ -968,7 +968,7 @@ function Navbar({ onClickDropdown , onClickDropdownLink , isActiveHamburger , is
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: "mb-1",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        href: "https://digidaxa.com/tentang-kami",
+                        href: "https://www.digidaxa.com/tentang-kami",
                         className: "nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary",
                         children: t("header.aboutUs")
                     })
@@ -976,7 +976,7 @@ function Navbar({ onClickDropdown , onClickDropdownLink , isActiveHamburger , is
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: "mb-1",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        href: "https://digidaxa.com/blog",
+                        href: "https://www.digidaxa.com/blog",
                         className: "nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary",
                         target: "_blank",
                         rel: "noreferrer",

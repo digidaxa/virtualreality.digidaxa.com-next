@@ -82,22 +82,22 @@ const companiesData = ()=>[
         {
             id: 0,
             title: "FAQ",
-            url: "https://digidaxa.com/faq"
+            url: "https://www.digidaxa.com/faq"
         },
         {
             id: 1,
             title: "Karir",
-            url: "https://digidaxa.com/karir"
+            url: "https://www.digidaxa.com/karir"
         },
         {
             id: 2,
             title: "Mengapa Digidaxa?",
-            url: "https://digidaxa.com/mengapa-digidaxa"
+            url: "https://www.digidaxa.com/mengapa-digidaxa"
         },
         {
             id: 3,
             title: "Berkolaborasi dengan Kami",
-            url: "https://digidaxa.com/collab"
+            url: "https://www.digidaxa.com/collab"
         }, 
     ];
 
