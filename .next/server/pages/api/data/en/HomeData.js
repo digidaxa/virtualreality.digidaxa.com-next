@@ -78,13 +78,13 @@ const portfolioDataEn = ()=>[
         },
         {
             id: 1,
-            title: "Firda Dental Care Virtual Reality",
-            url: "https://firdadentalcare.digidaxa.com"
+            title: "Sekuro Village Beach Resort Virtual Reality",
+            url: "https://sekurovillage.digidaxa.com"
         },
         {
             id: 2,
-            title: "Sekuro Village Beach Resort Virtual Reality",
-            url: "https://sekurovillage.digidaxa.com"
+            title: "Firda Dental Care Virtual Reality",
+            url: "https://firdadentalcare.digidaxa.com"
         }, 
     ];
 const featuresDataEn = ()=>[

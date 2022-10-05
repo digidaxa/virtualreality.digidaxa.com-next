@@ -501,7 +501,7 @@ function PorfolioSliderButton({ onClickSlider  }) {
 };
 
 ;// CONCATENATED MODULE: ./components/Home/PortfolioBody.js
-
+/* eslint-disable no-nested-ternary */ 
 
 
 
@@ -522,12 +522,12 @@ function PorfolioBody() {
                 onClickSlider: onClickButtonSliderHandler
             }),
             context.portfolios.map((portfolio)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: `overflow-hidden pb-5 px-3 ${portfolio.id === current ? "scale-100" : "translate-x-full scale-90 absolute rounded-lg"} transition-all duration-500 ease-out`,
+                    className: `overflow-hidden pb-5 px-3 ${portfolio.id === current ? "scale-100" : "translate-x-full scale-90 absolute rounded-lg mt-14"} transition-all duration-500 ease-out`,
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                        portfolio.id === current ? /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                             className: "w-full text-right text-dark text-xl ml-auto mb-3 border-b-2 pb-1 border-primary sm:text-2xl md:w-3/4 lg:text-3xl dark:text-light",
                             children: portfolio.title
-                        }),
+                        }) : "",
                         /*#__PURE__*/ jsx_runtime_.jsx("iframe", {
                             title: portfolio.title,
                             src: portfolio.id === current ? portfolio.url : "",
@@ -711,13 +711,13 @@ const portfolioDataEn = ()=>[
         },
         {
             id: 1,
-            title: "Firda Dental Care Virtual Reality",
-            url: "https://firdadentalcare.digidaxa.com"
+            title: "Sekuro Village Beach Resort Virtual Reality",
+            url: "https://sekurovillage.digidaxa.com"
         },
         {
             id: 2,
-            title: "Sekuro Village Beach Resort Virtual Reality",
-            url: "https://sekurovillage.digidaxa.com"
+            title: "Firda Dental Care Virtual Reality",
+            url: "https://firdadentalcare.digidaxa.com"
         }, 
     ];
 const featuresDataEn = ()=>[
@@ -899,13 +899,13 @@ const portfolioData = ()=>[
         },
         {
             id: 1,
-            title: "Firda Dental Care Virtual Reality",
-            url: "https://firdadentalcare.digidaxa.com"
+            title: "Sekuro Village Beach Resort Virtual Reality",
+            url: "https://sekurovillage.digidaxa.com"
         },
         {
             id: 2,
-            title: "Sekuro Village Beach Resort Virtual Reality",
-            url: "https://sekurovillage.digidaxa.com"
+            title: "Firda Dental Care Virtual Reality",
+            url: "https://firdadentalcare.digidaxa.com"
         }, 
     ];
 const featuresData = ()=>[

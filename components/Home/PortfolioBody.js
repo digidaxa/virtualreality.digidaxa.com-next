@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { useContext, useState } from 'react';
 
 import { AppContext } from '../../context/app-context';
@@ -25,9 +26,12 @@ export default function PorfolioBody() {
           .map((portfolio) => (
             <div
               key={portfolio.id}
-              className={`overflow-hidden pb-5 px-3 ${portfolio.id === current ? 'scale-100' : 'translate-x-full scale-90 absolute rounded-lg'} transition-all duration-500 ease-out`}
+              className={`overflow-hidden pb-5 px-3 ${portfolio.id === current
+                ? 'scale-100'
+                : 'translate-x-full scale-90 absolute rounded-lg mt-14'
+              } transition-all duration-500 ease-out`}
             >
-              <h2 className="w-full text-right text-dark text-xl ml-auto mb-3 border-b-2 pb-1 border-primary sm:text-2xl md:w-3/4 lg:text-3xl dark:text-light">{portfolio.title}</h2>
+              {portfolio.id === current ? <h2 className="w-full text-right text-dark text-xl ml-auto mb-3 border-b-2 pb-1 border-primary sm:text-2xl md:w-3/4 lg:text-3xl dark:text-light">{portfolio.title}</h2> : ''}
               <iframe
                 title={portfolio.title}
                 src={portfolio.id === current ? portfolio.url : ''}
