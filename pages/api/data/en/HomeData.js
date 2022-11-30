@@ -34,8 +34,13 @@ const clientsDataEn = () => [
   },
   {
     id: 5,
-    name: 'Sekuro Village',
+    name: 'Sekuro Village Beach Resort',
     logo: 'sekuro.webp',
+  },
+  {
+    id: 6,
+    name: 'Seaside Villa & Muse Beach Resto',
+    logo: 'seaside.webp',
   },
 ];
 
@@ -54,6 +59,11 @@ const portfolioDataEn = () => [
     id: 2,
     title: 'Firda Dental Care Virtual Reality',
     url: 'https://firdadentalcare.digidaxa.com',
+  },
+  {
+    id: 3,
+    title: 'Seaside Villa & Muse Beach Resto Virtual Reality',
+    url: 'https://seasidejepara.digidaxa.com',
   },
 ];
 
