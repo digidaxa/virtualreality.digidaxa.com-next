@@ -65,6 +65,11 @@ const portfolioData = () => [
     title: 'Seaside Villa & Muse Beach Resto Virtual Reality',
     url: 'https://seasidejepara.digidaxa.com',
   },
+  {
+    id: 4,
+    title: 'Love in Hotel & Resort Jepara',
+    url: 'https://loveinjepara.digidaxa.com',
+  },
 ];
 
 const featuresData = () => [
