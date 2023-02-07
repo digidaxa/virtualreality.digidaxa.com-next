@@ -42,6 +42,11 @@ const clientsData = () => [
     name: 'Seaside Villa & Muse Beach Resto',
     logo: 'seaside.webp',
   },
+  {
+    id: 7,
+    name: 'Love in Hotel & Resort Jepara',
+    logo: 'lovein.jpg',
+  },
 ];
 
 const portfolioData = () => [
