@@ -2,7 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import Hero from '../components/Digitally-Rendered/Hero';
 import Benefit from '../components/Digitally-Rendered/Benefit';
-import CTA from '../components/Partials/CTA';
+import CTA from '../components/partials/CTA';
 import Featured from '../components/Digitally-Rendered/Featured';
 import Comparison from '../components/Digitally-Rendered/Comparison';
 
