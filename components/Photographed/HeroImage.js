@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
-import Panorama from '../Partials/Panorama';
+import Panorama from '../partials/Panorama';
 
 export default function HeroImage() {
   const img = '/img/virtual-reality/photographed/photographed.webp';
