@@ -3,9 +3,9 @@ import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Head from 'next/head';
-import Header from '../Partials/Header';
-import Footer from '../Partials/Footer';
-import BacktoTopButton from '../Partials/BacktoTopButton';
+import Header from '../partials/Header';
+import Footer from '../partials/Footer';
+import BacktoTopButton from '../partials/BacktoTopButton';
 import { AppContext } from '../../context/app-context';
 
 export default function Layout(props) {
