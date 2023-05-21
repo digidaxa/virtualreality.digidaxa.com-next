@@ -7,7 +7,7 @@ import Portfolio from '../components/Home/Portfolio';
 import Feature from '../components/Home/Feature';
 import VR from '../components/Home/VR';
 import Benefit from '../components/Home/Benefit';
-import CTA from '../components/Partials/CTA';
+import CTA from '../components/partials/CTA';
 
 import {
   clientsData,
