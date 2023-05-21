@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Hero from '../components/Photographed/Hero';
 import Reinforcement from '../components/Photographed/Reinforcement';
 import Benefit from '../components/Photographed/Benefit';
-import CTA from '../components/Partials/CTA';
+import CTA from '../components/partials/CTA';
 import Featured from '../components/Photographed/Featured';
 
 import {
