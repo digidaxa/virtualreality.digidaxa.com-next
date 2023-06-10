@@ -341,9 +341,9 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4165);
 /* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react_three_drei__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9407);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__]);
-_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2596);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__]);
+_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -368,7 +368,7 @@ function HeroImage() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
                     fallback: null,
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
                         img: img
                     })
                 })
@@ -382,7 +382,7 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 9407:
+/***/ 2596:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
@@ -768,7 +768,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Digitally_Rendered_Hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(570);
 /* harmony import */ var _components_Digitally_Rendered_Benefit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5937);
-/* harmony import */ var _components_Partials_CTA__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3620);
+/* harmony import */ var _components_partials_CTA__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6648);
 /* harmony import */ var _components_Digitally_Rendered_Featured__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1731);
 /* harmony import */ var _components_Digitally_Rendered_Comparison__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5162);
 /* harmony import */ var _api_data_id_DigitallyRenderedData__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8292);
@@ -824,7 +824,7 @@ function DigitallyRendered() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Digitally_Rendered_Comparison__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {})
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Partials_CTA__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_partials_CTA__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
                 cta: cta
             })
         ]
@@ -1124,7 +1124,7 @@ module.exports = import("three");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,142,157], () => (__webpack_exec__(5423)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,142,213], () => (__webpack_exec__(5423)));
 module.exports = __webpack_exports__;
 
 })();

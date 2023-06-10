@@ -5,49 +5,6 @@ exports.id = 442;
 exports.ids = [442];
 exports.modules = {
 
-/***/ 9407:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Panorama)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2949);
-/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3784);
-/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([three__WEBPACK_IMPORTED_MODULE_1__]);
-three__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-function Panorama({ img  }) {
-    const texture = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_1__.TextureLoader, img);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("mesh", {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("sphereBufferGeometry", {
-                attach: "geometry",
-                args: [
-                    500,
-                    60,
-                    40
-                ]
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meshBasicMaterial", {
-                attach: "material",
-                map: texture,
-                side: three__WEBPACK_IMPORTED_MODULE_1__.BackSide
-            })
-        ]
-    });
-};
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
-
-/***/ }),
-
 /***/ 5224:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -338,9 +295,9 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4165);
 /* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react_three_drei__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9407);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__]);
-_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2596);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__]);
+_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -365,7 +322,7 @@ function HeroImage() {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
                     fallback: null,
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Partials_Panorama__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_partials_Panorama__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
                         img: img
                     })
                 })
@@ -471,6 +428,49 @@ function Reinforcement() {
     });
 };
 
+
+/***/ }),
+
+/***/ 2596:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ Panorama)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2949);
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3784);
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([three__WEBPACK_IMPORTED_MODULE_1__]);
+three__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+function Panorama({ img  }) {
+    const texture = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_1__.TextureLoader, img);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("mesh", {
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("sphereBufferGeometry", {
+                attach: "geometry",
+                args: [
+                    500,
+                    60,
+                    40
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meshBasicMaterial", {
+                attach: "material",
+                map: texture,
+                side: three__WEBPACK_IMPORTED_MODULE_1__.BackSide
+            })
+        ]
+    });
+};
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
@@ -648,7 +648,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Photographed_Hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3575);
 /* harmony import */ var _components_Photographed_Reinforcement__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2094);
 /* harmony import */ var _components_Photographed_Benefit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5224);
-/* harmony import */ var _components_Partials_CTA__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3620);
+/* harmony import */ var _components_partials_CTA__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6648);
 /* harmony import */ var _components_Photographed_Featured__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1667);
 /* harmony import */ var _api_data_id_PhotographedData__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(4332);
 /* harmony import */ var _api_data_en_PhotographedData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(2651);
@@ -703,7 +703,7 @@ function Photographed() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Photographed_Featured__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {})
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Partials_CTA__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_partials_CTA__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
                 cta: cta
             })
         ]
@@ -1003,7 +1003,7 @@ module.exports = import("three");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,142,157], () => (__webpack_exec__(6334)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,142,213], () => (__webpack_exec__(6334)));
 module.exports = __webpack_exports__;
 
 })();

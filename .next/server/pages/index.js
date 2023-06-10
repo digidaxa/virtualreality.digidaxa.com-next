@@ -1090,7 +1090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Home_Feature__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3065);
 /* harmony import */ var _components_Home_VR__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9729);
 /* harmony import */ var _components_Home_Benefit__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3830);
-/* harmony import */ var _components_Partials_CTA__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3620);
+/* harmony import */ var _components_partials_CTA__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6648);
 /* harmony import */ var _api_data_id_HomeData__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5695);
 /* harmony import */ var _api_data_en_HomeData__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7993);
 /* harmony import */ var _context_app_context__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(5049);
@@ -1160,7 +1160,7 @@ function Home() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Home_Benefit__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {})
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Partials_CTA__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_partials_CTA__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
                 cta: cta
             })
         ]
@@ -1446,7 +1446,7 @@ module.exports = import("auto-bind/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,142,157], () => (__webpack_exec__(3678)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,142,213], () => (__webpack_exec__(3678)));
 module.exports = __webpack_exports__;
 
 })();
