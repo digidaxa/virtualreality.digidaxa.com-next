@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtualreality.digidaxa.com</loc>
+    <loc>https://virtualreality.digidaxa.id</loc>
     <lastmod>2022-09-19T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://virtualreality.digidaxa.com/photographed</loc>
+    <loc>https://virtualreality.digidaxa.id/photographed</loc>
     <lastmod>2022-09-19T09:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://virtualreality.digidaxa.com/digitally-rendered</loc>
+    <loc>https://virtualreality.digidaxa.id/digitally-rendered</loc>
     <lastmod>2022-09-19T10:00:00+00:00</lastmod>
   </url>
 </urlset>

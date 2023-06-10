@@ -1,8 +1,8 @@
 {
-  "name": "virtualreality.digidaxa.com-next",
+  "name": "virtualreality.digidaxa.id-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://virtualreality.digidaxa.com",
+  "homepage": "https://virtualreality.digidaxa.id",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

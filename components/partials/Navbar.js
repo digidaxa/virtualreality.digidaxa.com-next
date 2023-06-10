@@ -56,10 +56,10 @@ export default function Navbar({
           </div>
         </li>
         <li className="mb-1">
-          <a href="https://www.digidaxa.com/tentang-kami" className="nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary">{t('header.aboutUs')}</a>
+          <a href="https://www.digidaxa.id/tentang-kami" className="nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary">{t('header.aboutUs')}</a>
         </li>
         <li className="mb-1">
-          <a href="https://www.digidaxa.com/blog" className="nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary" target="_blank" rel="noreferrer">{t('header.blog')}</a>
+          <a href="https://www.digidaxa.id/blog" className="nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary" target="_blank" rel="noreferrer">{t('header.blog')}</a>
         </li>
         <li className="mb-1">
           <a href="https://wa.me/+6285172243818" className="text-base font-semibold mx-6 flex px-6 py-2 bg-transparent border-[1px] border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all ease-in duration-75 dark:border-light dark:hover:border-primary dark:text-light lg:mx-4">{t('header.contactUs')}</a>

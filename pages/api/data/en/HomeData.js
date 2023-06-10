@@ -58,22 +58,22 @@ const portfolioDataEn = () => [
   {
     id: 1,
     title: 'Sekuro Village Beach Resort Virtual Reality',
-    url: 'https://sekurovillage.digidaxa.com',
+    url: 'https://sekurovillage.digidaxa.id',
   },
   {
     id: 2,
     title: 'Firda Dental Care Virtual Reality',
-    url: 'https://firdadentalcare.digidaxa.com',
+    url: 'https://firdadentalcare.digidaxa.id',
   },
   {
     id: 3,
     title: 'Seaside Villa & Muse Beach Resto Virtual Reality',
-    url: 'https://seasidejepara.digidaxa.com',
+    url: 'https://seasidejepara.digidaxa.id',
   },
   {
     id: 4,
     title: 'Love in Hotel & Resort Jepara',
-    url: 'https://loveinjepara.digidaxa.com',
+    url: 'https://loveinjepara.digidaxa.id',
   },
 ];
 

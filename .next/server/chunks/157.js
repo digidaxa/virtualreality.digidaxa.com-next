@@ -91,7 +91,7 @@ function Layout(props) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
-                        href: "https://virtualreality.digidaxa.com"
+                        href: "https://virtualreality.digidaxa.id"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "mask-icon",
@@ -127,7 +127,7 @@ function Layout(props) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",
-                        content: "https://virtualreality.digidaxa.com/"
+                        content: "https://virtualreality.digidaxa.id/"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:image",
@@ -347,7 +347,7 @@ function FooterCopyright() {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "w-1/2",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        href: "https://digidaxa.com",
+                        href: "https://digidaxa.id",
                         className: "text-dark hover:text-primary dark:text-light dark:hover:text-primary",
                         children: "\xa9 2022 Digidaxa"
                     })
@@ -356,7 +356,7 @@ function FooterCopyright() {
                     className: "w-1/2 text-right",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            href: "https://digidaxa.com/terms",
+                            href: "https://digidaxa.id/terms",
                             className: "text-dark hover:text-primary dark:text-light dark:hover:text-primary",
                             children: "Terms"
                         }),
@@ -365,7 +365,7 @@ function FooterCopyright() {
                             children: "•"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            href: "https://digidaxa.com/privacy",
+                            href: "https://digidaxa.id/privacy",
                             className: "text-dark hover:text-primary dark:text-light dark:hover:text-primary",
                             children: "Privacy"
                         })
@@ -440,54 +440,54 @@ const servicesData = ()=>[
         {
             id: 0,
             title: "VR Shop",
-            url: "https://virtualreality.digidaxa.com/"
+            url: "https://virtualreality.digidaxa.id/"
         },
         {
             id: 1,
             title: "AR Filter",
-            url: "https://arfilter.digidaxa.com/"
+            url: "https://arfilter.digidaxa.id/"
         },
         {
             id: 2,
             title: "AR Print",
-            url: "https://arprint.digidaxa.com/"
+            url: "https://arprint.digidaxa.id/"
         },
         {
             id: 3,
             title: "AR Pack",
-            url: "https://arpack.digidaxa.com/"
+            url: "https://arpack.digidaxa.id/"
         },
         {
             id: 4,
             title: "AR 3D Web",
-            url: "https://arweb.digidaxa.com/"
+            url: "https://arweb.digidaxa.id/"
         },
         {
             id: 5,
             title: "Smart CGI Background",
-            url: "https://smartcgi.digidaxa.com/"
+            url: "https://smartcgi.digidaxa.id/"
         }, 
     ];
 const companiesData = ()=>[
         {
             id: 0,
             title: "FAQ",
-            url: "https://www.digidaxa.com/faq"
+            url: "https://www.digidaxa.id/faq"
         },
         {
             id: 1,
             title: "Karir",
-            url: "https://www.digidaxa.com/karir"
+            url: "https://www.digidaxa.id/karir"
         },
         {
             id: 2,
             title: "Mengapa Digidaxa?",
-            url: "https://www.digidaxa.com/mengapa-digidaxa"
+            url: "https://www.digidaxa.id/mengapa-digidaxa"
         },
         {
             id: 3,
             title: "Berkolaborasi dengan Kami",
-            url: "https://www.digidaxa.com/collab"
+            url: "https://www.digidaxa.id/collab"
         }, 
     ];
 
@@ -529,54 +529,54 @@ const servicesDataEn = ()=>[
         {
             id: 0,
             title: "VR Shop",
-            url: "https://virtualreality.digidaxa.com/"
+            url: "https://virtualreality.digidaxa.id/"
         },
         {
             id: 1,
             title: "AR Filter",
-            url: "https://arfilter.digidaxa.com/"
+            url: "https://arfilter.digidaxa.id/"
         },
         {
             id: 2,
             title: "AR Print",
-            url: "https://arprint.digidaxa.com/"
+            url: "https://arprint.digidaxa.id/"
         },
         {
             id: 3,
             title: "AR Pack",
-            url: "https://arpack.digidaxa.com/"
+            url: "https://arpack.digidaxa.id/"
         },
         {
             id: 4,
             title: "AR 3D Web",
-            url: "https://arweb.digidaxa.com/"
+            url: "https://arweb.digidaxa.id/"
         },
         {
             id: 5,
             title: "Smart CGI Background",
-            url: "https://smartcgi.digidaxa.com/"
+            url: "https://smartcgi.digidaxa.id/"
         }, 
     ];
 const companiesDataEn = ()=>[
         {
             id: 0,
             title: "FAQ",
-            url: "https://www.digidaxa.com/faq"
+            url: "https://www.digidaxa.id/faq"
         },
         {
             id: 1,
             title: "Career",
-            url: "https://www.digidaxa.com/karir"
+            url: "https://www.digidaxa.id/karir"
         },
         {
             id: 2,
             title: "Why Digidaxa?",
-            url: "https://www.digidaxa.com/mengapa-digidaxa"
+            url: "https://www.digidaxa.id/mengapa-digidaxa"
         },
         {
             id: 3,
             title: "Collab with Us",
-            url: "https://www.digidaxa.com/collab"
+            url: "https://www.digidaxa.id/collab"
         }, 
     ];
 
@@ -968,7 +968,7 @@ function Navbar({ onClickDropdown , onClickDropdownLink , isActiveHamburger , is
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: "mb-1",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        href: "https://www.digidaxa.com/tentang-kami",
+                        href: "https://www.digidaxa.id/tentang-kami",
                         className: "nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary",
                         children: t("header.aboutUs")
                     })
@@ -976,7 +976,7 @@ function Navbar({ onClickDropdown , onClickDropdownLink , isActiveHamburger , is
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                     className: "mb-1",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        href: "https://www.digidaxa.com/blog",
+                        href: "https://www.digidaxa.id/blog",
                         className: "nav-link border-primary active:font-medium transition-all ease-in duration-75 dark:text-light dark:hover:text-primary",
                         target: "_blank",
                         rel: "noreferrer",

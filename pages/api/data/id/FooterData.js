@@ -35,32 +35,32 @@ const servicesData = () => ([
   {
     id: 0,
     title: 'VR Shop',
-    url: 'https://virtualreality.digidaxa.com/',
+    url: 'https://virtualreality.digidaxa.id/',
   },
   {
     id: 1,
     title: 'AR Filter',
-    url: 'https://arfilter.digidaxa.com/',
+    url: 'https://arfilter.digidaxa.id/',
   },
   {
     id: 2,
     title: 'AR Print',
-    url: 'https://arprint.digidaxa.com/',
+    url: 'https://arprint.digidaxa.id/',
   },
   {
     id: 3,
     title: 'AR Pack',
-    url: 'https://arpack.digidaxa.com/',
+    url: 'https://arpack.digidaxa.id/',
   },
   {
     id: 4,
     title: 'AR 3D Web',
-    url: 'https://arweb.digidaxa.com/',
+    url: 'https://arweb.digidaxa.id/',
   },
   {
     id: 5,
     title: 'Smart CGI Background',
-    url: 'https://smartcgi.digidaxa.com/',
+    url: 'https://smartcgi.digidaxa.id/',
   },
 ]);
 
@@ -68,22 +68,22 @@ const companiesData = () => ([
   {
     id: 0,
     title: 'FAQ',
-    url: 'https://www.digidaxa.com/faq',
+    url: 'https://www.digidaxa.id/faq',
   },
   {
     id: 1,
     title: 'Karir',
-    url: 'https://www.digidaxa.com/karir',
+    url: 'https://www.digidaxa.id/karir',
   },
   {
     id: 2,
     title: 'Mengapa Digidaxa?',
-    url: 'https://www.digidaxa.com/mengapa-digidaxa',
+    url: 'https://www.digidaxa.id/mengapa-digidaxa',
   },
   {
     id: 3,
     title: 'Berkolaborasi dengan Kami',
-    url: 'https://www.digidaxa.com/collab',
+    url: 'https://www.digidaxa.id/collab',
   },
 ]);
 

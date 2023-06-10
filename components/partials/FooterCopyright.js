@@ -4,7 +4,7 @@ export default function FooterCopyright() {
       <div className="container flex flex-wrap">
         <div className="w-1/2">
           <a
-            href="https://digidaxa.com"
+            href="https://digidaxa.id"
             className="text-dark hover:text-primary dark:text-light dark:hover:text-primary"
           >
             &copy; 2022 Digidaxa
@@ -12,14 +12,14 @@ export default function FooterCopyright() {
         </div>
         <div className="w-1/2 text-right">
           <a
-            href="https://digidaxa.com/terms"
+            href="https://digidaxa.id/terms"
             className="text-dark hover:text-primary dark:text-light dark:hover:text-primary"
           >
             Terms
           </a>
           <span className="mx-3 dark:text-light">&bull;</span>
           <a
-            href="https://digidaxa.com/privacy"
+            href="https://digidaxa.id/privacy"
             className="text-dark hover:text-primary dark:text-light dark:hover:text-primary"
           >
             Privacy
